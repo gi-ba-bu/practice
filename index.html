@@ -28,7 +28,7 @@
             </div>
             <div class="column">
                 <p class="title is-5"> git clone</p>
-                <p class="subtitle"> It doesn't really clone! </p>
+                <p class="subtitle"> It doesn't really clone branches! </p>
             </div>
             <div class="column">
                 <p class="title is-5"> git checkout</p>
@@ -36,7 +36,44 @@
             </div>
             <div class="column">
                 <p class="title is-5"> git checkout -b &ltstaging&gt  </p>
-                <p class="subtitle"> touch + cd for git  </p>
+                <p class="subtitle"> touch &ltstaging&gt + cd &ltstaging&gt for git  </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <p class="title is-5"> git branch</p>
+                <p class="subtitle"> Shows available branches <br> -a might help  </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git add &ltindex.html&gt</p>
+                <p class="subtitle"> Stages changes before commiting them </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git commit </p>
+                <p class="subtitle"> In VS code, a window will open asking for a commit message </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git commit -m "commit message"  </p>
+                <p class="subtitle"> git commit with inline commit message  </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <p class="title is-5"> git push </p>
+                <p class="subtitle">  Pushes to origin </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git push --set -upstream origin &ltstaging&gt </p>
+                <p class="subtitle"> Pushes the &ltstaging&gt branch to the repo for the first time  </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git remote add upstream git@github.com:&ltgit username&gt/&ltrepo&gt.git
+                </p>
+                <p class="subtitle"> Connects to the project owner repo   </p>
+            </div>
+            <div class="column">
+                <p class="title is-5"> git pull &ltstaging&gt</p>
+                <p class="subtitle"> Clones &ltstaging&gt branch (see above: clone doesn't do this!)</p>
             </div>
         </div>
     </main>

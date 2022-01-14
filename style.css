@@ -1,3 +1,8 @@
+main{
+    margin: 30px;
+    background-color: grey;
+}
+
 main .columns {
     margin: 20px;
 }
