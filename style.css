@@ -17,4 +17,10 @@ main .column {
     list-style-type: none;
 }
 
+.menu-list a:hover{
+    background-color: #50a0e1;
+}
 
+.footer{
+    padding-bottom: 4rem;
+}
