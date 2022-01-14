@@ -1,3 +1,13 @@
+.columns {
+    margin: 20px;
+}
+
+.column {
+    background-color: aqua; 
+    margin: 10px;
+    border-radius: 7px;
+}
+ 
 .content ul, .content ul ul{
     list-style-type: none;
 }
