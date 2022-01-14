@@ -1,0 +1,9 @@
+.columns {
+    margin: 20px;
+}
+
+.column {
+    background-color: aqua; 
+    margin: 10px;
+    border-radius: 7px;
+}
