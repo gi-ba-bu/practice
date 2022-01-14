@@ -1,10 +1,11 @@
 main{
     margin: 30px;
     background-color: grey;
+    padding: 25px;
 }
 
 main .columns {
-    margin: 20px;
+    margin: 8px;
 }
 
 main .column {
