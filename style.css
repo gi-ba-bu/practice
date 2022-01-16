@@ -1,7 +1,11 @@
+body {
+    background-color:  #3e8ed0;
+}
+
 main{
-    margin: 30px;
-    background-color: grey;
+    margin: 5px;
     padding: 25px;
+    background-color: whitesmoke;
 }
 
 main .columns {
@@ -9,9 +13,17 @@ main .columns {
 }
 
 main .column {
-    background-color: aqua; 
+    background-color: rgb(220, 233, 233); 
     margin: 10px;
     border-radius: 7px;
+}
+
+.example {
+    border: solid !important;
+    border-width: 1px !important;
+    border-color: hsl(348, 86%, 43%) !important;
+    border-radius: 3px !important;
+    padding: 3px;
 }
  
 .content ul, .content ul ul{

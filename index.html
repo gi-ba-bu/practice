@@ -21,57 +21,59 @@
         </nav>
     </header>
     <main>
-        <div class="columns">
-            <div class="column">
+        <h1 class="title is-1 is has-text-centered"> <p>Git commands <a class="is-size-6 has-background-danger-light example">$ with sample code</a></p> </h1>
+        <div class="columns is-multiline is-mobile is-centered">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git init</p>
-                <p class="subtitle"> Initialize the current folder to a git env.</p>
+                <p class="subtitle"> Sets up the current folder as a Git repository. </p>
+                <p class="is-size-6"> Used on either an empty folder or one already containing files. </p>
             </div>
-            <div class="column">
-                <p class="title is-5"> git clone</p>
-                <p class="subtitle"> It doesn't really clone branches! </p>
+            <div class="column column is-one-quarter">
+                <p class="title is-5"> git checkout -b &ltbranch name&gt  </p>
+                <p class="subtitle"> Creates and names a new branch. Also makes the new branch the active one.  </p>
+                <p class="is-size-6 has-background-danger-light is-block example">$ git checkout -b staging</p>
             </div>
-            <div class="column">
-                <p class="title is-5"> git checkout</p>
-                <p class="subtitle"> cd for git </p>
+            <div class="column column is-one-quarter">
+                <p class="title is-5"> git checkout &ltbranch name&gt</p>
+                <p class="subtitle"> Makes an existing branch the active one. </p>
+                <p class="is-size-6 has-background-danger-light is-block example">$ git checkout staging</p>
             </div>
-            <div class="column">
-                <p class="title is-5"> git checkout -b &ltstaging&gt  </p>
-                <p class="subtitle"> touch &ltstaging&gt + cd &ltstaging&gt for git  </p>
+            <div class="column column is-one-quarter">
+                <p class="title is-5"> git clone &ltrepository&gt </p>
+                <p class="subtitle"> Clones a repository; doesn't clone all branches. </p>
+                <p class="is-size-6"> Clones a github repository into a newly created directory with the same name, creates remote-tracking branches for each branch in the cloned repository (visible using git branch --remotes), but creates and checks out only one initial branch that is forked from the cloned repository’s currently active branch. </p>
+                <p class="is-size-6 has-background-danger-light is-block example">$ git clone git@github.com:python/cpython.git</p>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git branch</p>
                 <p class="subtitle"> Shows available branches <br> -a might help  </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git add &ltindex.html&gt</p>
                 <p class="subtitle"> Stages changes before commiting them </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git commit </p>
                 <p class="subtitle"> In VS code, a window will open asking for a commit message </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git commit -m "commit message"  </p>
                 <p class="subtitle"> git commit with inline commit message  </p>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git push </p>
                 <p class="subtitle">  Pushes to origin </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git push --set -upstream origin &ltstaging&gt </p>
-                <p class="subtitle"> Pushes the &ltstaging&gt branch to the repo for the first time  </p>
+                <p class="subtitle"> Pushes the currently active branch to the repository for the first time and names it  </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git remote add upstream git@github.com:&ltgit username&gt/&ltrepo&gt.git
                 </p>
                 <p class="subtitle"> Connects to the project owner repo   </p>
             </div>
-            <div class="column">
+            <div class="column column is-one-quarter">
                 <p class="title is-5"> git pull &ltstaging&gt</p>
                 <p class="subtitle"> Clones &ltstaging&gt branch (see above: clone doesn't do this!)</p>
             </div>
